@@ -8,48 +8,66 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <form class="row g-3">
+                <form class="row g-3 needs-validation" novalidate>
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        <label for="validationCustom01" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                        Ottimo!
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <label for="validationCustom02" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                        Ottimo!
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <div class="col-md-6">
+                        <label for="validationCustomDate" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="validationCustomDate" value="" required>
+                        <div class="valid-feedback">
+                        Ottimo!
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustomUsername" class="form-label">E-mail</label>
+                        <div class="input-group has-validation">
+                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Inserisci un e-mail.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Provincia</label>
+                        <select class="form-select" id="validationCustom03" required>
+                            <option selected disabled value="">Scegli...</option>
                         </select>
+                        <div class="invalid-feedback">
+                            Inserisci una provincia.
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                    <div class="col-md-6">
+                        <label for="validationCustomCity" class="form-label">Comune</label>
+                        <select class="form-select" id="validationCustomCity" required>
+                            <option selected disabled value="">Scegli...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Inserisci un comune.
+                        </div>
                     </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
+                    <div class="col-md-12">
+                        <label for="validationCustom05" class="form-label">Richiesta</label>
+                        <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea" id="validationCustom05" required></textarea>
+                        </div>
+                        <div class="invalid-feedback">
+                        Inserisci una richiesta.
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button class="btn btn-primary" type="submit">Invia</button>
                     </div>
                 </form>
             </div>
